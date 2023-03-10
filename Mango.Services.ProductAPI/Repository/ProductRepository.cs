@@ -30,6 +30,7 @@ namespace Mango.Services.ProductAPI.Repository
 
             await _db.SaveChangesAsync();
             return _mapper.Map<Product, ProductDto>(product);
+
         }
 
         public async Task<bool> DeleteProduct(int ProductId)
